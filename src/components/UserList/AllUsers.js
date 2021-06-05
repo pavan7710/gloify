@@ -1,7 +1,7 @@
 import React , {useEffect , Fragment} from 'react'
 import {connect} from 'react-redux'
-import { getAllUser } from '../actions/actions'
-import Spinner from '../layout/Spinner'
+import { getAllUser } from "../../actions/actions"
+import Spinner from '../../layout/Spinner'
 import Usercard from './Usercard'
 const AllUsers = ({getAllUser , users : {loading , data} }) => {
     //({users : {loading , data}})
@@ -17,16 +17,18 @@ const AllUsers = ({getAllUser , users : {loading , data} }) => {
          {loading ? (<Fragment>
              <Spinner/>
          </Fragment>) : (
-             <div className="row">
+             <div className="container ">
+             <div className="row  m-3 ">
+
 
                  {data.map((user) => {
                      return(
-                         <div  className="col-lg-4 col-md-3">
-                         <Usercard key={user.id} user={user}/>
+                         <div  key={user.id}  className="col-lg-4 col-sm-6">
+                         <Usercard  user={user}/>
                          </div>
                      )
-
                  })}
+            </div>
             </div>
          )}
      </Fragment>
