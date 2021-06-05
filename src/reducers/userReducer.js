@@ -1,7 +1,9 @@
 import {GET_ALLUSERS , GET_SINGLEUSER} from '../actions/constants'
 
 
-const initialstate = {}
+const initialstate = {
+    loading : true
+}
 
  const userReducer = (state=initialstate , action) => {
      const {type , payload} = action
@@ -10,7 +12,8 @@ const initialstate = {}
          case GET_ALLUSERS:
              return {
                  ...state,
-                ...payload
+                ...payload,
+                loading : false
              }
         
         default : 
