@@ -1,4 +1,4 @@
-import {GET_ALLUSERS , GET_SINGLEUSER} from '../actions/constants'
+import {GET_ALLUSERS} from '../actions/constants'
 
 
 const initialstate = {
@@ -15,7 +15,7 @@ const initialstate = {
                 ...payload,
                 loading : false
              }
-        
+
         default : 
             return state
      }
