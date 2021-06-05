@@ -8,7 +8,7 @@ import {Provider} from 'react-redux'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {BrowserRouter , Route} from 'react-router-dom'
 
-console.log(store.getState())
+//console.log(store.getState())
 
 ReactDOM.render(
   <React.StrictMode>

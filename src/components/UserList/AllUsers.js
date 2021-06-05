@@ -6,8 +6,8 @@ import Usercard from './Usercard'
 const AllUsers = ({getAllUser , users : {loading , data} }) => {
     //({users : {loading , data}})
  //  console.log(users)
-  console.log(loading, data)
-  console.log(data)
+ // console.log(loading, data)
+ // console.log(data)
     useEffect(()=>{
         getAllUser()
     }, [getAllUser])

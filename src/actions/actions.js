@@ -17,7 +17,7 @@ export const getAllUser = () => async dispatch =>{
 }
 
 export const getSingleUser = (Id) => async dispatch => {
-       console.log(Id)
+    //   console.log(Id)
         try {
             const response = await axios.get(`https://reqres.in/api/users/${Id}`)
 
